@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Encryption">
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/textViewMessage"
+        android:layout_marginTop="5dp"
+        android:hint="enter message"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/textViewPassword"
+        android:layout_marginTop="5dp"
+        android:hint="enter password"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/outputText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/textViewEncData"
+        android:layout_marginTop="5dp"
+        android:hint="encrypted message" />
+
+    <Button
+        android:id="@+id/encode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/outputText"
+        android:layout_marginTop="40dp"
+        android:text="Encrypt" />
+
+    <Button
+        android:id="@+id/decode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/encode"
+        android:layout_marginTop="40dp"
+        android:text="decrypt" />
+
+    <Button
+        android:id="@+id/showQR"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/decode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Show QR" />
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="Message "
+        android:textStyle="bold"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"/>
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/inputText"
+        android:text="Password"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewEncData"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/password"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginTop="15dp"
+        android:text="Encrypted content"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

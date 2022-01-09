@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/encrypt_button"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="76dp"
+        android:fontFamily="@font/baloo_thambi"
+        android:text="@string/ENCRYPT"
+        android:textSize="20sp"
+        android:textColor="#0D47A1"
+        android:textColorHighlight="@color/white"
+        app:backgroundTint="#10DA72"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/decrypt_button"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/decrypt_button"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="76dp"
+        android:fontFamily="@font/baloo_thambi"
+        android:text="@string/decrypt"
+        android:textSize="20sp"
+        android:textColor="#0D47A1"
+        app:backgroundTint="#10DA72"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/encrypt_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
